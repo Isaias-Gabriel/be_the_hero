@@ -10,7 +10,7 @@ module.exports = {
         .first();
 
         if (!ong) {
-            return response.status(400).json({ erro: 'No NGO found with this ID' });
+            return response.status(400).json({ erro: 'Nenhuma ONG encontrada com esse ID' });
         }
 
         return response.json(ong);
